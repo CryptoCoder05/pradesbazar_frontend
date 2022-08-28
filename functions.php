@@ -1,0 +1,43 @@
+<?php
+
+// require MySQL Connection class...
+require 'database/DBController.php';
+
+// require Product class...
+require 'database/product.php';
+
+// require Cart class...
+require 'database/cart.php';
+
+// require Brand class...
+require 'database/brand.php';
+
+// require Brand class...
+require 'database/Transaction.php';
+
+// require Category class...
+require 'database/Categories.php';
+
+// DBController object...
+$db = new DBController();
+
+// Product object...
+$product = new Product($db);
+$Product = new Product($db);
+$product_shuffle = $product->getData();
+
+
+// Cart object...
+$cart = new Cart($db);
+
+// Cart object...
+$Cart = new Cart($db);
+
+// Cart object...
+$Brand = new Brand($db);
+
+// Cart object...
+$Transaction = new Transaction($db);
+
+// Category object...
+$Category = new Category($db);
